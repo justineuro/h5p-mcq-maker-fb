@@ -25,7 +25,7 @@ z
 
 ```
 (Note: Tips, correct- and wrong-answer feedbacks are given in item 1.  Item 2 has neither tips nor right/wrong answer feedbacks.  Item 3 has not tips but has right/wrong answer feedbacks.)  
-The H5P is created in the main directory and is called `FILE_NAME.h5p` based on the value of `FILE_NAME` in your `control-fb.txt` file.  There are a number of ways to view/play this newly created H5P:  
+The H5P is created in the main directory and is called `NAME_H5P_DIR.h5p` based on the value of `H5P_NAME` in your `control-fb.txt` file.  There are a number of ways to view/play this newly created H5P:  
 
 * use [Lumi](https://app.lumi.education/), an offline H5P viewer and editor
 * upload into a platform (e.g., [h5p.org's H5P test drive page](https://h5p.org/testdrive-h5p), Learning Management Systems (LMSs)); allows for further editing.
