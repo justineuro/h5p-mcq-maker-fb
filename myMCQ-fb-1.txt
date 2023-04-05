@@ -1,0 +1,29 @@
+1. Which one of the following is a number?
+*1:Is this used for counting?:Correct, this is a counting number.:Yes, we use numbers for counting!
+p:Is this used for counting?:Not quite, this is the 16th letter of the English alphabet.:This is the 16th letter of the English alphabet.
+q:Is this used for counting?:Not quite, this is the 17th letter of the English alphabet.:This is the 17th letter of the English alphabet.
+r:Is this used for counting?:Not quite, this is the 18th letter of the English alphabet.:This is the 18th letter od the English alphabet.
+
+2. Which one of the following is a letter?
+1:Is this one of the 26?:Not quite, this is ONE.:Written in letters this is\\\\(\\\\colon\\\\) ONE.
+2:Is this one of the 26?:Not quite,this is TWO.:Written in letters this is\\\\(\\\\colon\\\\) TWO.
+*A:Is this one of the 26?:Correct, this it the first letter of the English alphabet.:This is the first letter of the English alphabet!
+
+3. 2 + 3 = 
+3:1 + 1 = 2:Bigger!:This is smaller. 
+4:1 + 1 = 2:Nearly!:Nearly there.
+*5:1 + 1 = 2:Correct!:Not quite.
+6:1 + 1 = 2:A bit over!:This is the product.
+
+4. Which statement is true?
+\\\\(\\\\sqrt{5}\\\\) is a rational number:Is this a fraction?:No.
+\\\\(0\\\\) is a positive number::No.
+*\\\\(\\\\sqrt{3}\\\\) is a real number::Yes!
+\\\\(\\\\sqrt{4}\\\\) is an irrational number:This is equal to 2.
+
+5. The tenths digit of the number 7,654.321 is _____.
+4:The thousandths digit is 1.:Not quite. This is the units or ones digit.:This is the units or ones digit.
+2:The thousandths digit is 1.:Not quite. This is the units or tens digit.:This is the units or tens digit.
+6:The thousandths digit is 1.:Not quite. This is the units or hundreds digit.:This is the units or hundreds digit.
+*3:The thousandths digit is 1.:Correct. Indeed, this is the tenths digit.:This is the tenths digit.
+
