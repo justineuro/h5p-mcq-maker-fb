@@ -15,10 +15,10 @@
 # DESCRIPTION:	Used for generating multiple-choice Question Sets H5P 
 #
 #      AUTHOR:	J.L.A. Uro (justineuro@gmail.com)
-#     VERSION:	0.0.0
+#     VERSION:	0.0.1
 #     LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
 #     CREATED:	2023/04/05 16:52:37
-#    REVISION:	
+#    REVISION:	2024/06/19 20:02:47
 #==================================================================================
 
 #####
@@ -158,8 +158,13 @@ cat > h5p-pr.json << EOT
       "machineName": "H5P.Video",
       "majorVersion": "1",
       "minorVersion": "6"
+    },
+    {
+      "machineName": "H5P.MathDisplay",
+      "majorVersion": "1",
+      "minorVersion": "0"
     }
-  ]
+	]
 }
 EOT
 
@@ -450,7 +455,7 @@ NAME_H5P_DIR=`echo -e ${NAME_H5P/.h5p/}`
 if [ -z "./$NAME_H5P_DIR" ]; then rm -fr ./$NAME_H5P_DIR; fi
 
 # copy the Question Set-616 h5p_libs to $NAME_H5P_DIR (folder of new H5P)
-cp -a ./h5p-mcq-616_libs ./$NAME_H5P_DIR
+cp -a ./h5p-mcq-616_libs/* ./$NAME_H5P_DIR
 chmod -R 0755 ./$NAME_H5P_DIR
 # move the newly-created JSON files to $NAME_H5P_DIR
 mv ./h5p-pr.json ./$NAME_H5P_DIR
@@ -467,7 +472,7 @@ cd $OLDPWD
 sleep 2s
 echo -e "\nThe h5p.json file was created in this directory: ${BOLD}${YELLOW}./$NAME_H5P_DIR/h5p.json${NORM}"
 echo -e "The content.json that was created is in: ${BOLD}${YELLOW}./$NAME_H5P_DIR/content/content.json${NORM}"
-echo -e "The newly created multiple-choice H5P is in this directory: ${BOLD}${YELLOW}./$NAME_H5P${NORM}\n"
+echo -e "The ${BOLD}${BLINK}newly-created${NORM} multiple-choice H5P is in this directory: ${BOLD}${YELLOW}./$NAME_H5P${NORM}\n"
 ###
 ##
 #

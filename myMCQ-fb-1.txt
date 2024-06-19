@@ -23,7 +23,7 @@ r:Is this used for counting?:Not quite, this is the 18th letter of the English a
 
 5. The tenths digit of the number 7,654.321 is _____.
 4:The thousandths digit is 1.:Not quite. This is the units or ones digit.:This is the units or ones digit.
-2:The thousandths digit is 1.:Not quite. This is the units or tens digit.:This is the units or tens digit.
-6:The thousandths digit is 1.:Not quite. This is the units or hundreds digit.:This is the units or hundreds digit.
+2:The thousandths digit is 1.:Not quite. This is the tens digit.:This is the tens digit.
+6:The thousandths digit is 1.:Not quite. This is the hundreds digit.:This is the hundreds digit.
 *3:The thousandths digit is 1.:Correct. Indeed, this is the tenths digit.:This is the tenths digit.
 
