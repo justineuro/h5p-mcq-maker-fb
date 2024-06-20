@@ -145,7 +145,7 @@
 					"confirmLabel": "Confirm"
 				}
 			},
-			"subContentId": "81abd9aa-c4a8-4e8f-a2eb-77a8f11f27ce",
+			"subContentId": "233c954d-f4ac-4969-99e6-790a62a36bd7",
 			"metadata": {
 				"contentType": "Multiple Choice",
 				"license": "U",
@@ -239,7 +239,7 @@
 					"confirmLabel": "Confirm"
 				}
 			},
-			"subContentId": "50275218-ef24-418c-abf5-75d3c4ed036c",
+			"subContentId": "1f68eab0-5b19-47e2-8dae-d96fca3ca6b5",
 			"metadata": {
 				"contentType": "Multiple Choice",
 				"license": "U",
@@ -342,7 +342,7 @@
 					"confirmLabel": "Confirm"
 				}
 			},
-			"subContentId": "1372451c-64d2-4582-80fe-14ef94cb4cc0",
+			"subContentId": "f9c7d273-704d-4b9d-a936-479ff5d59f23",
 			"metadata": {
 				"contentType": "Multiple Choice",
 				"license": "U",
@@ -445,7 +445,7 @@
 					"confirmLabel": "Confirm"
 				}
 			},
-			"subContentId": "9ce0d41d-04e9-4ca3-bd1a-108df503f692",
+			"subContentId": "f4a5467e-e4dd-452b-b34d-7777c1388881",
 			"metadata": {
 				"contentType": "Multiple Choice",
 				"license": "U",
@@ -461,7 +461,7 @@
 						"text": "4",
 						"correct": false,
             "tipsAndFeedback": {
-              "tip": "The tenths digit is 3.",
+              "tip": "The tens digit is 5.",
               "chosenFeedback": "Not quite. This is the units or ones digit.",
               "notChosenFeedback": "This is the units or ones digit."
             }
@@ -470,7 +470,7 @@
 						"text": "2",
 						"correct": false,
             "tipsAndFeedback": {
-              "tip": "The tenths digit is 3.",
+              "tip": "The tens digit is 5.",
               "chosenFeedback": "Not quite. This is the hundreths digit.",
               "notChosenFeedback": "This is the hundreths digit."
             }
@@ -479,7 +479,7 @@
 						"text": "6",
 						"correct": false,
             "tipsAndFeedback": {
-              "tip": "The tenths digit is 3.",
+              "tip": "The tens digit is 5.",
               "chosenFeedback": "Not quite. This is the hundreds digit.",
               "notChosenFeedback": "This is the hundreds digit."
             }
@@ -488,7 +488,7 @@
 						"text": "3",
 						"correct": true,
             "tipsAndFeedback": {
-              "tip": "The tenths digit is 3.",
+              "tip": "The tens digit is 5.",
               "chosenFeedback": "Correct. Indeed, this is the tenths digit.",
               "notChosenFeedback": "This is the tenths digit."
             }
@@ -548,7 +548,7 @@
 					"confirmLabel": "Confirm"
 				}
 			},
-			"subContentId": "37a4b7d2-8f6b-4c48-abac-e17c198f2293",
+			"subContentId": "1a375f13-9c27-468a-8c2b-7dc951c8fa11",
 			"metadata": {
 				"contentType": "Multiple Choice",
 				"license": "U",
