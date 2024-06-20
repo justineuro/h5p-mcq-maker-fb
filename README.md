@@ -4,7 +4,7 @@ This repository contains a bash script for creating an [H5P](https://h5p.org) of
 ```sh
 ./mcq2h5p-FDBCK.sh control-fb.txt myMCQ-fb.txt
 ```
-where `myMCQ-fb.txt` (it may be named in some other way) is a plain-text input file that contains your multiple-choice questions and corresponding answers (possibly with tips and feedbacks) written in [H5P Question Set template markup](https://h5p.org/question-set), e.g.,  
+where `myMCQ-fb.txt` (it may be named in some other way) is a plain-text input file that contains your multiple-choice questions and corresponding answers (possibly with tips and feedbacks) written in [H5P Question Set template markup](https://h5p.org/question-set) (see [tutorial](https://h5p.org/tutorial-question-set)), e.g.,  
 ```
 1. Which of the following is a letter?
 10:Is this in the alphabet?:Try again.:In letters, this is TEN.
