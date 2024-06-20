@@ -36,7 +36,7 @@ The H5P is created in the main directory and is called `NAME_H5P_DIR.h5p` based 
 To use:
 
 * Clone this repository: `git clone https://github.com/justineuro/h5p-mcq-maker-fb.git`.
-* Prepare a plain text file, say `myMCQ-fb.txt` (it may be some other filename), containing your MC questions and answers written in [H5P Question Set template markup](https://h5p.org/question-set), and save it under the `h5p-mcq-maker-fb` directory that you just cloned.
+* Prepare a plain text file, say `myMCQ-fb.txt` (it may be some other filename), containing your MC questions and answers written in [H5P Question Set template markup](https://h5p.org/question-set) (see the [H5P Question Set Tutorial](https://h5p.org/tutorial-question-set) for additional information), and save it under the `h5p-mcq-maker-fb` directory that you just cloned.
 * Edit the `control-fb.txt` file to set the parameters for your new H5P (includes `NAME_H5P`, `TITLE`, `AUTHOR`, `LICENSE`, `INTRODUCTION`, `PASS_PERCENTAGE`, `DISABLE_BACKWARDS_NAVIGATION`, `RANDOM_QUESTIONS`, and `POOL_SIZE`; see `mcq2h5p-FDBCK.sh` for a description of these parameters).
 * At a linux command line within your `h5p-mcq-maker-fb` directory, issue the command:
 ```sh
