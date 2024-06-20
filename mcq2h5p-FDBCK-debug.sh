@@ -18,7 +18,7 @@
 #     VERSION:	0.0.1
 #     LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
 #     CREATED:	2023/04/05 16:52:37
-#    REVISION:	2024/06/20 17:03:57
+#    REVISION:	2024/06/20 16:38:52
 #==================================================================================
 
 #####
@@ -234,29 +234,44 @@ n=1 # counter for pool size
 declare -a arrline
 arrline=()
 line=""
-
+rm 1.txt
 while read line; do
-	# if this line is a right answer line, change * --> "K*rekt" 
-	# to avoid problems such as `echo -E $*1`
 	if [ "${line:0:1}" == "*" ]; then
 		line="K*reKt"${line/'*'/}
+		echo "newLine: $line" >> ./1.txt
 	fi
 	
+	#echo $i
+	echo -e "\nn = " $n 
+	echo -e "Q=$n, i=$i, line = ${line}" >> ./1.txt
 	# if this is a question line, write question
-	if [ "$line" != "" -a "$q" != "0" ]; then 
+	if [ "${line}" != "" -a "${q}" != "0" ]; then 
 		# process the choice, tips, feedbacks 
+		echo "line: $line" >> ./1.txt
 		arrline=(`echo -E $line`)
+		echo "line $i: $line; arrline= ${arrline[@]}" >> ./1.txt
+		echo ${arrline[@]}
 		echo ${arrline[@]} > ./0.txt
 		cat ./0.txt
 		line=`awk 'BEGIN { FS=":" } { print $1 }' ./0.txt`
+		echo "line= $line"
 		tip=`awk 'BEGIN { FS=":" } { print $2 }' ./0.txt`
+		echo "tip= $tip"
 		fdb1=`awk 'BEGIN { FS=":" } { print $3 }' ./0.txt`
+		echo "fdb1= $fdb1"
 		fdb2=`awk 'BEGIN { FS=":" } { print $4 }' ./0.txt`
+		echo "fdb2= $fdb2"
+		cat 0.txt >> 1.txt
 		rm ./0.txt
 	fi
 	if [ "$q" == "0" ]; then 
+		#echo -E "$line"
+		#echo "JSON for question part being written"
+		echo "This Q-line: ${line}"
+		echo -e "This Q-line: ${line}"	>> ./1.txt
 		arrline=(`echo -E $line`)
 		line=`unset arrline[0]; echo -E ${arrline[*]}`
+		echo -e "This is Q-arrline: ${arrline[*]}; This is Q-line: $line" >> ./1.txt
 		cat >> content-pr.json << EOT
 	{
 		"library": "H5P.MultiChoice 1.16",
@@ -266,6 +281,7 @@ while read line; do
 EOT
 		q=`expr $q + 1` # indicator q set to 1
 	elif [ "${line:0:1}" == "" ]; then  # blank line or end of question
+		#echo -E "$line"
 		#echo  "JSON for end of question, after last choice has been processed"
 		cat >> content-pr.json << EOT
 					}
@@ -343,8 +359,10 @@ EOT
 		fi
 			q=0 # set q to zero for next question line to be written
 			n=`expr $n + 1` # increase counter for pool size
+			echo -e "\n" >> ./1.txt
 	# if this is a correct answer choice ...
 	elif [ "${line:0:6}" == "K*reKt" ]; then 
+		echo "This is Rt-Ans: ${line/'K*reKt'/}" >> ./1.txt
 		#echo "write JSON for a correct answer choice"
 		#if this is the first of the given choices 
 		if [ "$q" == "1" ]; then
@@ -389,6 +407,7 @@ EOT
 			fi
 		fi
 	else # this must be a wrong answer line
+		#echo "${line:0:1}"
 		#echo "write JSON for wrong answer line"
 		#if this is the first of the given choices 
 		if [ "$q" == "1" ]; then 
