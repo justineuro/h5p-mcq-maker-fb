@@ -1,3 +1,5 @@
+**(Before using this bash script, note that a convenient way for creating a single H5P of any type is probably by using a free H5P viewer/editor app such as [Lumi](https://lumi.education/en/).  However, if you have a substantial amount of multiple-choice question sets to create, then this bash script comes in handy.)**  
+
 # h5p-mcq-maker-fb  
 
 This repository contains a bash script for creating an [H5P](https://h5p.org) of multiple-choice questions (with a single correct answer; possibly with tips and right/wrong answer feedbacks) using the [H5P Question Set template](https://h5p.org/question-set) via the linux command line. Simply:  
